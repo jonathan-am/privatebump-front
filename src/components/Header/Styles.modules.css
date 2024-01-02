@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b39708e;
+}
+
+.App-header {
+    position: relative;
+    background-color: #394240;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    color: #61dafb;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border: 2px solid #61dafb;
+    border-radius: 8px;
+    background-color: #394240;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+.App-header h1:hover {
+    background-color: #61dafb;
+    color: #394240;
+    animation: none;
+}
+
+.perfil-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: #61dafb52;
+    border: 2px solid #61dafb;
+    border-radius: 18px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.perfil-button:hover {
+    background-color: #61dafb;
+    color: #394240;
+    position: relative;
+}
+
+.icon-list {
+    position: absolute;
+    top: 68%;
+    left: 95%;
+    transform: translateX(-50%);
+    margin-top: 2px;
+    background-color: #132e38b2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 12px;
+    z-index: 1;
+    min-width: 80px;
+    color: #fff;
+    display: inline-grid;
+    row-gap: 5px;
+}
+
+.icon-perfil, .icon-sair{
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon-perfil:hover, .icon-sair:hover {
+    transform: scale(1.1);
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.perfil-button::after {
+    content: '\25BC';
+    margin-left: 5px;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@media (max-width: 768px) {
+    .App-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil-button {
+        margin: 10px auto;
+    }
+
+    .icon-list {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

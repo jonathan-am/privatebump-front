@@ -1,0 +1,124 @@
+.game-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.game-page-app-main {
+    flex-grow: 1;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.current-game {
+    width: 100%;
+    max-height: auto;
+    background-color: #141a18;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.global-atack-current-time {
+    height: 15px;
+    color: rgba(255, 0, 0, 0.288);
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+
+.current-game-information {
+    width: 100%;
+    height: 170px;
+    background-color: #141a18;
+    display: grid;
+}
+
+.current-game-information-title {
+    color: aliceblue;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    background-color: #141a18;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.current-game-information-title p {
+    padding-top: 5px;
+    border: #3bd7ec solid 1px;
+    margin: 0;
+}
+
+.current-game-information-values {
+    color: chartreuse;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    background-color: #141a18;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.load-game-info {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.update-current-game-information {
+    width: 100px;
+    background-color: green;
+    border-radius: 12px;
+    color: #000000;
+    font-weight: bold;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+}
+
+.loading-game-information-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.current-game-frame {
+    height: auto;
+    display: grid;
+    justify-items: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.current-game-frame p {
+    height: 25px;
+    width: 300px;
+    margin: 0;
+    position: absolute;
+    background-color: green;
+    color: gold;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.current-game-frame iframe {
+    width: 90%;
+    height: 450px;
+}
+
+
+@media (max-width: 768px) {
+    .game-page-app-main {
+        width: 100%;
+    }
+
+    .current-game-frame p {
+        width: 91%;
+    }
+
+    .current-game-frame iframe {
+        width: 90%;
+        height: 712px;
+    }
+}

@@ -1,0 +1,183 @@
+.register-app {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #3498db, #2c3e50);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.register-app .header-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.register-app .header-container header {
+  background-color: #394240;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.register-app .header-container header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Arial', sans-serif;
+  color: #61dafb;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  background-color: #394240;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  animation: pulse 2s infinite;
+  text-align: center;
+  cursor: pointer;
+}
+
+.register-app .header-container header h1:hover {
+  background-color: #61dafb;
+  color: #394240;
+  animation: none;
+}
+
+.register-app .container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.register-app form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.register-app label {
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 1.2em;
+}
+
+.register-app input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.register-app .login-redirect {
+  width: auto;
+  height: 30px;
+  color: #555;
+  align-self: flex-end;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.register-app .login-redirect:hover {
+  color: #3498db;
+}
+
+.register-app button {
+  width: 100%;
+  padding: 14px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+}
+
+.register-app .pageTitle {
+  color: #333;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.register-app .pageTitle h2 {
+  color: #333;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #61dafb;
+  padding-bottom: 5px;
+}
+
+.register-app .form-container {
+  min-height: 100vh;
+}
+
+.register-app .form-container .pageTitle{
+  margin-top: 200px;
+}
+
+.register-app button:hover {
+  background-color: #27ae60;
+}
+
+.container div {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: auto;
+    padding: 20px;
+  }
+
+  .register-app .form-container .pageTitle{
+    margin-top: 130px;
+  }
+
+  .register-app .form-container .container{
+    margin-bottom: 90px;
+  }
+}

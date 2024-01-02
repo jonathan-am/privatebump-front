@@ -1,0 +1,70 @@
+.profile-app-main {
+    max-height: auto;
+    display: grid;
+    justify-items: center;
+}
+
+.profile-information {
+    width: 700px;
+    height: auto;
+    background-color: #555;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: inline-grid;
+    text-align: center;
+    gap: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-content: baseline;
+}
+
+.profile-information div {
+    background-color: rgba(143, 188, 143, 0.397);
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.profile-information div p {
+    text-align: center;
+    color: rgb(1, 67, 71);
+}
+
+.profile-vip-redirect {
+    width: 100px;
+    height: 50px;
+    border-radius: 6px;
+    border: 0;
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: medium;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.profile-vip-redirect:hover {
+    background-color: rgb(45, 145, 45);
+    font-size: medium;
+}
+
+.profile-app-main .profile-information .terms {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-bottom: 6px;
+    padding-top: 9px;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+@media (max-width: 768px) {
+    .profile-information {
+        width: 90%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+}

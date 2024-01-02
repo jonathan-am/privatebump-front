@@ -1,0 +1,39 @@
+.game-news {
+    height: 82px;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    background-color: rgba(53, 52, 52, 0.212);
+    position: relative;
+    border: #3bd7ec solid 2px;
+    display: flex;
+    overflow: hidden;
+}
+
+.game-news-container>* {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.game-news-container {
+    display: flex;
+    flex-direction: row;
+    animation: scroll 9000s linear infinite;
+    width: fit-content;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 20px * 12));
+    }
+}
+
+@media (max-width: 768px) {
+    .game-news {
+        width: auto;
+    }
+}
